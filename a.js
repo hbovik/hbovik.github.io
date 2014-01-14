@@ -1,5 +1,5 @@
 var d = new webkitAudioContext();
-node = d.createScriptProcessor(2048,1,1);
+node = d.createScriptProcessor(4096,1,1);
 node.onaudioprocess = function (e) {
   var output = e.outputBuffer.getChannelData(0);
   for (var i = 0; i < output.length; i++) {
